@@ -19,7 +19,7 @@ img {
 
 p {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   color: rgba(38, 38, 38, 0.755);
 }
 
@@ -34,7 +34,7 @@ h5 {
 
 .container {
   width: 100%;
-  padding: 5% 10%;
+  padding: 0% 10%;
   margin: auto;
 }
 
@@ -43,7 +43,7 @@ h5 {
   display: inline-block;
   width: 60px;
   height: 3px;
-  background-color: #0062ff;
+  background-color: #264de4;
   margin: 0 3% 1% 0;
 }
 
@@ -51,12 +51,13 @@ h5 {
 
 .hero {
   width: 100%;
-  height: 37rem;
+  height: 43rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   padding: 10%;
-  background: rgba(247, 247, 247, 0.672);
+  background: rgb(245, 245, 245);
 }
 
 .hero_content {
@@ -82,6 +83,7 @@ h5 {
 
 .hero_image {
   width: 45%;
+  height: 100%;
 }
 
 .hero_image img {
@@ -91,11 +93,14 @@ h5 {
   border-radius: 1rem;
 }
 
-/* section style  */
-section {
-  margin-bottom: 8%;
+/* SECTION STYLES  */
+
+#one {
+  margin: 7% 0;
 }
-/* section style end  */
+#two {
+  margin-bottom: 10%;
+}
 
 /* About section */
 
@@ -110,7 +115,7 @@ section {
 .skills h3 {
   font-size: 2rem;
   color: #2d3748;
-  margin: 4% 0;
+  margin: 6% 0;
 }
 
 .skills__content {
@@ -129,7 +134,7 @@ section {
 }
 
 .skills p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: "Poppins", sans-serif;
 }
 
@@ -169,9 +174,10 @@ section {
 
 /* Contact me  */
 .contact {
-  background: rgba(247, 247, 247, 0.672);
-  height: 33rem;
+  background: rgb(245, 245, 245);
+  height: auto;
   color: white;
+  padding: 7% 0;
 }
 
 .contact__text {
@@ -179,11 +185,11 @@ section {
 }
 
 .contact__text p {
-  font-size: 1.2rem;
   margin-bottom: 2%;
 }
 .contact span {
-  color: #0062ff;
+  color: #264de4;
+  font-weight: 600;
 }
 .contact h3 {
   font-size: 2rem;
@@ -229,28 +235,24 @@ section {
   margin-right: 17px;
 }
 
-section.contact {
-  margin-bottom: 0;
-}
-
 /* footer  */
 
 footer {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  height: 5rem;
+  height: 7rem;
   width: 100%;
-  padding: 5% 10%;
-}
-
-footer h4 {
-  font-family: "Poppins", sans-serif;
+  padding: 2% 10%;
 }
 
 .footer_logo {
   width: 5rem;
+  height: 4rem;
+}
+
+.two {
+  width: 3rem;
   height: 4rem;
 }
 
@@ -263,6 +265,11 @@ footer h4 {
 /* media queries */
 @media (max-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
+  .hero_content {
+    flex-basis: 52%;
+    margin-top: 3%;
+    color: #2d3748;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -279,10 +286,16 @@ footer h4 {
 
   .hero_content {
     flex-basis: 50%;
-    margin-top: 6%;
+    /* margin-top: 6%; */
   }
+
+  .hero_image img {
+    width: 100%;
+    height: 94%;
+  }
+
   .container {
-    padding: 5% 8%;
+    padding: 0 9%;
   }
 
   /* skills */
@@ -295,7 +308,7 @@ footer h4 {
   }
 
   .skills p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   /* contact */
   .contact__content p {
@@ -304,7 +317,7 @@ footer h4 {
     margin-bottom: 10px;
   }
   .contact__text p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .contact__content ion-icon {
     font-size: 33px;
@@ -321,71 +334,92 @@ footer h4 {
 @media (max-width: 768px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 
+  .container {
+    padding: 0% 9%;
+  }
   /* hero */
 
   .hero {
     width: 100%;
-    height: 100vh;
+    height: 35rem;
     display: flex;
   }
 
   .hero h2 {
     font-size: 25px;
   }
+
+  .hero_content {
+    margin-bottom: 17%;
+  }
   .hero_content h1 {
     font-size: 2rem;
     margin-top: 3rem;
     margin-bottom: 2rem;
   }
-  /* skills  */
-  .skills p {
-    font-size: 1rem;
+
+  .hero_image {
+    width: 45%;
+    height: 100%;
+    margin-top: 5%;
+  }
+  .hero_image img {
+    height: 80%;
   }
 
   .bar {
     width: 0;
   }
+
+  .contact__container {
+    display: flex;
+    height: 13rem;
+  }
   /* contact */
   .contact {
     height: 54rem;
+    padding: 9% 0;
   }
+  .contact__content p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
   .contact__content {
     height: 89%;
     width: 70%;
     margin: auto;
   }
-  .contact__content p {
-    font-size: 0.9rem;
-    font-weight: 400;
-    margin-bottom: 10px;
-  }
+
   .contact__text p {
-    font-size: 1.15rem;
+    font-size: 1rem;
+    font-weight: 500;
   }
   .contact__content ion-icon {
     font-size: 39px;
   }
-  .container {
-    padding: 5% 8%;
-  }
+
   footer {
     height: 6rem;
     width: 100%;
-    padding: 5%;
+    padding: 5% 9%;git 
     text-align: center;
-  }
-  footer h4 {
-    font-size: 0.9rem;
-    font-weight: 400;
   }
 }
 
 @media (max-width: 601px) {
   /* smartphones, Android phones, landscape iPhone */
 
-  body p {
-    font-size: 15px;
-    font-weight: 400;
+  /* SECTION STYLES  */
+  #one {
+    margin: 10% 0;
+  }
+  #two {
+    margin-bottom: 20%;
+  }
+  .container {
+    padding: 0% 11%;
   }
 
   .hero_content {
@@ -393,8 +427,13 @@ footer h4 {
     margin: auto;
     color: #2d3748;
   }
+  .hero_content h1 {
+    font-size: 2rem;
+    margin-top: 2%;
+  }
   .hero_image {
     flex-basis: 90%;
+    height: 60%;
     margin: auto;
     margin-top: 10%;
     color: #2d3748;
@@ -406,10 +445,6 @@ footer h4 {
   }
 
   /* About  */
-
-  main.container {
-    padding: 21% 8% 6%;
-  }
 
   /* skills */
 
@@ -432,14 +467,14 @@ footer h4 {
   /* contact  */
   .contact__content {
     height: 89%;
-    width: 82%;
+    width: 99%;
     margin: auto;
   }
 
   .contact h3,
   .skills h3,
   .about h3 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #2d3748;
     margin: 6% 0;
   }
@@ -447,27 +482,72 @@ footer h4 {
     font-size: 1rem;
   }
 
-  footer h3 {
-    font-size: 10px;
+  footer p {
+    font-size: 14px;
     font-size: 400;
+  }
+  footer {
+    flex-wrap: wrap;
   }
 }
 
 @media screen and (max-width: 370px) {
   /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  p,
+  .skills p,
+  .contact__content p {
+    font-size: 14px;
+  }
+  #one {
+    margin: 15% 0;
+  }
+  #two {
+    margin-bottom: 18%;
+  }
 
+  .hero {
+    width: 100%;
+    height: 38rem;
+  }
+
+  .hero h3 {
+    font-size: 1rem;
+  }
+  .hero h2 {
+    font-size: 22px;
+  }
+  .bar {
+    width: 37px;
+  }
   .hero h2 {
     font-size: 23px;
   }
-
-  main.container {
-    padding: 6% 8% 6%;
+  .hero_content h1 {
+    font-size: 2rem;
+    margin-top: 11%;
   }
+  .hero_image {
+    flex-basis: 90%;
+    height: 50%;
+  }
+  /* h3 styles */
+  .contact h3,
+  .skills h3,
+  .about h3 {
+    font-size: 1.5rem;
+    color: #2d3748;
+    margin: 6% 0;
+  }
+
   /* contact */
   .contact__content {
     height: 89%;
     width: 99%;
     margin: auto;
+  }
+  .contact {
+    height: 50rem;
+    padding: 9% 0;
   }
 
   .footer_logo {
@@ -475,7 +555,7 @@ footer h4 {
     height: 4rem;
   }
 
-  footer h4 {
+  footer p {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;

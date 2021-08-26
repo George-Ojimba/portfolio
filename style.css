@@ -43,7 +43,7 @@ h5 {
   display: inline-block;
   width: 60px;
   height: 3px;
-  background-color: #264de4;
+  background-color: #264ce4c6;
   margin: 0 3% 1% 0;
 }
 
@@ -73,6 +73,7 @@ h5 {
 
 .hero_content h2 {
   font-size: 26px;
+  color: #284bd8b8;
 }
 
 .hero_content h3 {
@@ -188,7 +189,7 @@ h5 {
   margin-bottom: 2%;
 }
 .contact span {
-  color: #264de4;
+  color:#264ce4c6;
   font-weight: 600;
 }
 .contact h3 {
@@ -403,7 +404,7 @@ footer {
   footer {
     height: 6rem;
     width: 100%;
-    padding: 5% 9%;git 
+    padding: 5% 9%;
     text-align: center;
   }
 }

@@ -51,12 +51,12 @@ h5 {
 
 .hero {
   width: 100%;
-  height: 43rem;
+  min-height: 30rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 10%;
+  padding: 5% 10%;
   background: rgb(245, 245, 245);
 }
 
@@ -84,14 +84,12 @@ h5 {
 
 .hero_image {
   width: 45%;
-  height: 100%;
+  height: 90%;
 }
 
 .hero_image img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
-  border-radius: 1rem;
 }
 
 /* SECTION STYLES  */
@@ -109,6 +107,31 @@ h5 {
   font-size: 2rem;
   color: #2d3748;
   margin-bottom: 4%;
+}
+
+.about__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 25rem;
+}
+
+.about_text,
+.about_image {
+  width: 48%;
+  height: 100%;
+
+}
+
+.about_text {
+  padding-top: 1rem;
+}
+
+.about_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
 }
 
 /* Skills */
@@ -189,7 +212,7 @@ h5 {
   margin-bottom: 2%;
 }
 .contact span {
-  color:#264ce4c6;
+  color: #264ce4c6;
   font-weight: 600;
 }
 .contact h3 {
@@ -264,6 +287,19 @@ footer {
 }
 
 /* media queries */
+@media (max-width: 1100px) {
+  /* big landscape tablets, laptops, and desktops */
+  .about_text {
+    width: 60%;
+  }
+  .about_image {
+    width: 35%;
+  }
+  .about_text {
+    padding-top: 0;
+  }
+}
+
 @media (max-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
   .hero_content {
@@ -292,7 +328,13 @@ footer {
 
   .hero_image img {
     width: 100%;
-    height: 94%;
+    height: 57%;
+    margin-top: 5rem;
+    object-fit: cover;
+  }
+
+  .about_text {
+    font-size: 15px;
   }
 
   .container {
@@ -313,7 +355,7 @@ footer {
   }
   /* contact */
   .contact__content p {
-    font-size: 0.9rem;
+    font-size: 14px;
     font-weight: 400;
     margin-bottom: 10px;
   }
@@ -342,7 +384,7 @@ footer {
 
   .hero {
     width: 100%;
-    height: 35rem;
+    min-height: 25rem;
     display: flex;
   }
 
@@ -351,21 +393,21 @@ footer {
   }
 
   .hero_content {
-    margin-bottom: 17%;
+    margin-bottom: 8%;
   }
   .hero_content h1 {
     font-size: 2rem;
-    margin-top: 3rem;
     margin-bottom: 2rem;
   }
 
   .hero_image {
     width: 45%;
     height: 100%;
-    margin-top: 5%;
+    margin-bottom: 5%;
   }
   .hero_image img {
-    height: 80%;
+    margin-top: 1rem;
+  
   }
 
   .bar {
@@ -375,6 +417,22 @@ footer {
   .contact__container {
     display: flex;
     height: 13rem;
+  }
+  /* About  */
+  .about__section {
+    display: block;
+    height: auto;
+  }
+
+  .about_text,
+  .about_image {
+    width: 100%;
+    border: 1px solid red;
+  }
+
+  .about_image {
+    height: 18rem;
+    margin-top: 2rem;
   }
   /* contact */
   .contact {

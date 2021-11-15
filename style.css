@@ -20,7 +20,7 @@ img {
 p {
   font-size: 1rem;
   font-weight: 400;
-  color: rgba(38, 38, 38, 0.755);
+  color: rgba(38, 38, 38, 0.891);
 }
 
 h1,
@@ -43,9 +43,12 @@ h5 {
   display: inline-block;
   width: 60px;
   height: 3px;
-  background-color: #264ce4c6;
+  background-color: #284bd8b8;
   margin: 0 3% 1% 0;
 }
+
+/* navigation */
+
 
 /*Header section  */
 
@@ -123,7 +126,7 @@ h5 {
 }
 
 .about_text {
-  padding-top: 3rem;
+  padding-top: .5rem;
 }
 
 .about_image img {
@@ -184,7 +187,6 @@ h5 {
 .logo {
   margin: auto;
   text-align: center;
-  /* border-right:2px solid #ccc; */
 }
 
 .logo img {
@@ -210,7 +212,7 @@ h5 {
 .contact__text p {
   margin-bottom: 2%;
 }
-.contact span {
+.contact p a {
   color: #264ce4c6;
   font-weight: 600;
 }
@@ -261,34 +263,20 @@ h5 {
 /* footer  */
 
 footer {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
   height: 5rem;
   width: 100%;
-  padding: 2% 10%;
+   display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
-footer p{
-  color: #264ce4c6;
-  text-align: center;
-  font-size: 1rem;
-}
-
-.footer_logo {
-  width: 5rem;
-  height: 4rem;
+footer p {
+  color: #2d3748bf;
 }
 
 .two {
   width: 3rem;
   height: 4rem;
-}
-
-.footer_logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
 }
 
 /* media queries */
@@ -331,6 +319,13 @@ footer p{
     padding-top: 1rem;
   }
 
+  .about_text{
+    width: 55%;
+  }
+  .about_image{
+    width: 40%;
+  }
+
   .container {
     padding: 0 9%;
   }
@@ -363,7 +358,6 @@ footer p{
     width: 30px;
     margin: 0 1% 1% 0;
   }
- 
 }
 
 @media (max-width: 768px) {
@@ -444,6 +438,10 @@ footer p{
     font-size: 39px;
   }
 
+   footer p {
+    font-size: 15px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 601px) {
@@ -485,14 +483,14 @@ footer p{
   /* About  */
   .about__section {
     display: block;
-   
   }
 
-  .about_text, .about_image {
+  .about_text,
+  .about_image {
     width: 100%;
   }
 
-  .about_image{
+  .about_image {
     margin-top: 2rem;
   }
   /* skills */
@@ -513,7 +511,6 @@ footer p{
     margin: auto;
   }
 
-
   /* contact  */
   .contact__content {
     height: 89%;
@@ -532,10 +529,6 @@ footer p{
     font-size: 1rem;
   }
 
-  footer p {
-    font-size: 15px;
-    margin-top:1.3rem;
-  }
 
 }
 
@@ -598,15 +591,7 @@ footer p{
     padding: 9% 0;
   }
 
-  .footer_logo {
-    width: 32%;
-    height: 4rem;
+  footer p {
+    font-size: 14px;
   }
-
-  /* footer p {
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    align-self: center;
-  } */
 }

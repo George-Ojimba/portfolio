@@ -49,7 +49,6 @@ h5 {
 
 /* navigation */
 
-
 /*Header section  */
 
 .hero {
@@ -126,7 +125,7 @@ h5 {
 }
 
 .about_text {
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 
 .about_image img {
@@ -265,7 +264,7 @@ h5 {
 footer {
   height: 5rem;
   width: 100%;
-   display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -315,14 +314,13 @@ footer p {
   }
 
   .about_text {
+    width: 55%;
     font-size: 15px;
     padding-top: 1rem;
+    line-height: 1.6;
   }
-
-  .about_text{
-    width: 55%;
-  }
-  .about_image{
+g
+  .about_image {
     width: 40%;
   }
 
@@ -438,7 +436,7 @@ footer p {
     font-size: 39px;
   }
 
-   footer p {
+  footer p {
     font-size: 15px;
     text-align: center;
   }
@@ -528,8 +526,6 @@ footer p {
   .contact__text p {
     font-size: 1rem;
   }
-
-
 }
 
 @media screen and (max-width: 370px) {
